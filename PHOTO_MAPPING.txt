@@ -1,0 +1,43 @@
+VIKKI BIRTHDAY WEBSITE — PHOTO UPLOAD MAP
+
+Upload every file in this folder directly into the ROOT of the new GitHub repository.
+Do NOT put the photos inside a photos folder.
+
+first_meet_1.jpg = First meeting 1
+first_meet_2.jpg = First meeting 2
+affection_1.jpg = Cute/care memory
+ramnagar_1.jpg = Ramanagar bread memory
+ramnagar_2.jpg = Ramanagar / friends reaction
+pondy_1.jpg = Pondicherry first trip
+pondy_2.jpg = Pondicherry memory
+coorg_1.jpg = Coorg
+coorg_2.jpg = Coorg memory
+sakleshpur_1.jpg = Sakleshpur
+sakleshpur_2.jpg = Sakleshpur memory
+harishchandragad_1.jpg = Harishchandragad
+harishchandragad_2.jpg = Harishchandragad memory
+mysore_1.jpg = Mysore
+mysore_2.jpg = Mysore memory
+long_distance_1.jpg = Long distance
+long_distance_2.jpg = Long distance memory
+cute_1.jpg = Cute memory
+cute_2.jpg = Cute memory
+cute_3.jpg = Cute memory
+cute_4.jpg = Cute memory
+cute_5.jpg = Cute memory
+tirupati_1.jpg = Tirupati
+tirupati_2.jpg = Tirupati
+tirupati_3.jpg = Tirupati
+
+INTERACTION ORDER
+- Each photo is revealed one at a time with “Tap to see what happened ❤️”.
+- Balloon game: YOU → ARE → MINE → FOREVER.
+- Cake: Make your wish → Fast → Faster → DONE; candles go out.
+- Existing love / rating / relationship / future / prayer / voice-note interactions are retained.
+
+MUSIC
+The website is prepared to play a local file named:
+background-music.mp3
+
+For copyright reasons, the commercial song itself is NOT included in this ZIP.
+If you have a copy you are permitted to use, rename it to background-music.mp3 and upload it to the same GitHub repository root. Tap “🎵 Play our song” once on the website because iPhone browsers require a user action before audio can start.

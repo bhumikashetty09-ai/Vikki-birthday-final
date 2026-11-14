@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3a163c">
+<title>For Vikki ❤️</title>
+<style>
+:root{--ivory:#fff8ef;--muted:#f2dfe0;--gold:#f1cf86;--rose:#e98b86;--plum:#241039;--glass:rgba(30,10,42,.42);--line:rgba(255,229,177,.38)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;color:var(--ivory);font-family:Georgia,'Times New Roman',serif;background:#241039}body{overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:linear-gradient(180deg,#1d123c 0%,#48204f 34%,#b44d58 60%,#f58c4b 78%,#321a45 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% 70%,rgba(255,174,90,.42),transparent 27%),radial-gradient(circle at 15% 20%,rgba(255,210,155,.12),transparent 20%),linear-gradient(180deg,rgba(24,10,45,.22),rgba(25,8,37,.36));pointer-events:none}
+.app{min-height:100vh}.screen{width:min(100%,560px);min-height:100vh;margin:auto;padding:30px 20px 38px;display:none;position:relative;align-items:center;justify-content:center;text-align:center}.screen.active{display:flex;animation:fade .65s ease}.inner{width:100%;position:relative;z-index:2}.copy{font-size:18px;line-height:1.75;color:var(--muted);white-space:pre-line;margin:0 auto 22px;max-width:470px;text-shadow:0 2px 14px rgba(0,0,0,.22)}.title{font-size:clamp(36px,10vw,56px);line-height:1.03;margin:0 0 18px;font-weight:500;text-shadow:0 5px 24px rgba(0,0,0,.3)}.small{font-size:14px;line-height:1.6;color:#f1d9da}.btn{border:1px solid var(--line);background:rgba(39,14,50,.42);color:var(--ivory);padding:13px 22px;border-radius:999px;margin:7px;cursor:pointer;box-shadow:0 8px 28px rgba(0,0,0,.22);transition:.2s;backdrop-filter:blur(8px)}.btn:hover{transform:translateY(-1px)}.btn.primary{background:linear-gradient(135deg,#e7b969,#bd5f78);border-color:transparent}.choices{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}.card{background:var(--glass);border:1px solid rgba(255,229,177,.2);border-radius:26px;padding:24px;backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(20,0,35,.28)}
+.photo-reveal{margin:14px auto 22px;max-width:460px}.photo-cover{min-height:300px;border-radius:26px;background:linear-gradient(145deg,rgba(255,205,125,.18),rgba(65,19,67,.72));border:1px solid rgba(255,231,188,.25);display:flex;align-items:center;justify-content:center;padding:25px;box-shadow:0 22px 60px rgba(0,0,0,.3);overflow:hidden}.photo-cover .spark{font-size:60px;animation:pulse 1.5s infinite}.hidden-photo{display:none;width:100%;height:auto;max-height:62vh;object-fit:contain;border-radius:22px;box-shadow:0 20px 55px rgba(0,0,0,.38);background:#170b20}.photo-caption{font-size:15px;color:var(--gold);font-style:italic;line-height:1.5;margin:11px auto 0;max-width:430px}.photo-hint{font-size:14px;color:#f0d9d4;margin:10px 0 0}
+#musicBar{position:fixed;top:12px;right:12px;z-index:50}.musicBtn{border:1px solid rgba(255,230,190,.4);background:rgba(28,10,42,.55);color:white;border-radius:999px;padding:10px 14px;backdrop-filter:blur(10px);font-size:13px}.musicMsg{position:fixed;top:58px;right:12px;max-width:250px;background:rgba(28,10,42,.82);border:1px solid rgba(255,230,190,.25);padding:10px 13px;border-radius:14px;font:13px/1.4 Arial,sans-serif;display:none}
+.heart{position:fixed;pointer-events:none;z-index:40;animation:float 2.2s ease-out forwards;font-size:22px}.confetti{position:fixed;top:-18px;width:9px;height:13px;z-index:40;pointer-events:none;animation:fall 3.2s linear forwards}.panda{font-size:78px}.infinity{font-size:78px;color:var(--gold);line-height:1;margin:10px}.slider-value{font-size:18px;color:var(--muted)}input[type=range]{width:90%;accent-color:var(--gold)}
+.balloons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px auto}.balloon{width:72px;height:88px;border-radius:50% 50% 46% 46%;border:0;color:white;font-weight:700;font-size:15px;cursor:pointer;box-shadow:inset -8px -10px 20px rgba(0,0,0,.16),0 12px 28px rgba(0,0,0,.22);position:relative;transition:.3s}.balloon:after{content:"";position:absolute;bottom:-9px;left:50%;width:2px;height:14px;background:rgba(255,255,255,.7)}.balloon.popped{transform:scale(0) rotate(25deg);opacity:0}.balloon:nth-child(1){background:#d95c78}.balloon:nth-child(2){background:#e78d4f}.balloon:nth-child(3){background:#8755a5}.balloon:nth-child(4){background:#e0b34f;color:#321a45}.balloon-word{font-size:34px;color:var(--gold);min-height:50px;font-weight:600}.cake-wrap{margin:16px auto 20px}.cake{position:relative;width:190px;height:120px;margin:auto}.cake-top{position:absolute;bottom:22px;left:10px;width:170px;height:65px;background:linear-gradient(#f6d1c5,#e98f91);border-radius:16px 16px 22px 22px;box-shadow:0 15px 30px rgba(0,0,0,.24)}.cake-top:after{content:"";position:absolute;left:0;right:0;top:18px;height:8px;background:#fff0e8;border-radius:50%}.plate{position:absolute;bottom:5px;left:0;width:190px;height:18px;border-radius:50%;background:#f2cf8b}.candle{position:absolute;bottom:87px;width:9px;height:32px;background:#fff4df;border-radius:4px}.c1{left:55px}.c2{left:91px}.c3{left:127px}.flame{position:absolute;width:13px;height:20px;background:#ffcf62;border-radius:50% 50% 50% 50%;top:-18px;left:-2px;box-shadow:0 0 18px #ffbf4b}.blown .flame{display:none}.smoke{display:none;position:absolute;top:-30px;left:-7px;font-size:20px}.blown .smoke{display:block;animation:smoke 1.5s ease-out forwards}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}@keyframes float{0%{transform:translateY(0) scale(.8);opacity:1}100%{transform:translateY(-180px) translateX(var(--x)) rotate(20deg);opacity:0}}@keyframes pulse{50%{transform:scale(1.1)}}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(720deg);opacity:.1}}@keyframes smoke{to{transform:translateY(-45px) scale(1.4);opacity:0}}
+#musicPlayer{position:fixed;width:1px;height:1px;left:-20px;top:-20px;opacity:0;pointer-events:none;overflow:hidden;z-index:-1}#musicPlayer iframe{width:1px;height:1px;border:0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<audio id="voiceAudio" preload="auto" src="vikki-birthday-voice.m4a"></audio><div id="musicPlayer" aria-hidden="true"><iframe id="musicFrame" src="https://www.youtube.com/embed/6sxrg3STH2Y?autoplay=1&playsinline=1&controls=0&loop=1&playlist=6sxrg3STH2Y&enablejsapi=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media" title="Background music"></iframe></div>
+<main class="app" id="app"></main>
+<script>
+const P='';
+const screens=[];
+function add(html,init){screens.push({html,init});}
+function photo(src,cap){return `<div class="photo-reveal"><div class="photo-cover" id="cover-${src.replace(/[^a-z0-9]/gi,'')}"><div><div class="spark">✨</div><button class="btn primary" data-reveal="${src}">Tap to see what happened ❤️</button><div class="photo-hint">There’s a little memory hiding here…</div></div></div><img class="hidden-photo" data-photo="${src}" src="${P+src}" alt="A memory together"><div class="photo-caption" data-caption="${src}">${cap||''}</div></div>`}
+function next(){go(1)}
+add(`<div class="inner"><h1 class="title">Hey Vikki… ❤️</h1><p class="copy">I couldn’t give this to you in person today, so I made something instead.
+
+It’s a little collection of memories, feelings, stupid moments and everything that makes us… us.
+
+Don’t rush through it.
+Take your time. 🫶🏻</p><button class="btn primary" data-next>Tap to begin ❤️</button></div>`);
+add(`<div class="inner"><p class="copy">I still remember those shivering hands, that nervous heart and all the questions running through my mind.
+
+It was my first time meeting someone like this… and honestly, I had no idea what that moment was going to become.
+
+But somehow, that first meeting became something I’ll never forget.
+
+I didn’t know it then, but I was meeting someone who would slowly become such a huge part of my life. ❤️</p>${photo('first_meet_1.jpg','Somewhere, our story began. ❤️')}<button class="btn primary" data-next>There’s another part… ❤️</button></div>`);
+add(`<div class="inner">${photo('first_meet_2.jpg','And somehow, that first meeting became unforgettable.')}<button class="btn primary" data-love>Do you love me? ❤️</button><div id="loveChoices"></div></div>`);
+add(`<div class="inner"><p class="copy">There are so many little things about the way you treat me that stay with me.
+
+The way you make me feel cared for.
+The way you notice little things.
+The way you make me feel safe and comfortable.
+The way you somehow know how to handle me, even when I’m being difficult. 😂
+
+The way you randomly get me flowers, especially lotuses, and put in so much effort just to find one for me. You know how much I love them, and I don’t think you realise how much those little efforts mean to me. 🌸
+
+And remember that bread you got me in Ramanagar that morning? 😂 My friends were staring at both of us like, “What did we do to not get this kind of treatment?” 😂😂
+
+And yes… I can never forget my first diamonds. 💎
+
+Not just because they were diamonds, but because they came from you.
+
+It’s moments like these that make me realise how lucky I am to be loved by you. ❤️</p>${photo('affection_1.jpg','It’s always the little things. ❤️')}<button class="btn primary" data-next>And then came that Ramanagar morning…</button></div>`);
+add(`<div class="inner">${photo('ramnagar_1.jpg','That Ramanagar bread moment. 😂')}<button class="btn primary" data-next>And my friends definitely noticed… 😂</button></div>`);
+add(`<div class="inner">${photo('ramnagar_2.jpg','My friends were definitely watching. 😂😂')}<button class="btn primary" data-next>Okay, one honest question…</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:38px">Rate me out of 10.</h2><div class="card"><input id="rating" type="range" min="1" max="10" value="10"><div class="slider-value">Your answer: <span id="rv">10</span></div><div id="inf"></div></div><button class="btn primary" data-next id="ratingNext" style="display:none">Continue ❤️</button></div>`,()=>{const r=document.getElementById('rating'),v=document.getElementById('rv'),inf=document.getElementById('inf'),n=document.getElementById('ratingNext');r.oninput=()=>v.textContent=r.value;r.onchange=()=>{inf.innerHTML='<div class="infinity">∞</div><p class="copy">Obviously. 😌<br>Some things just can’t be measured.<br>Infinity/10. ❤️</p><p class="small">Are you Wi-Fi? Because I’m feeling a connection. 😌😂</p>';n.style.display='inline-block';}});
+add(`<div class="inner"><p class="copy">Some of my favourite memories with you aren’t really about the place.
+
+They’re about how I felt when I was there with you.
+
+From the madness of climbing mountains to the calm of just spending a day together…
+
+our trips have given me some of the happiest memories. ❤️</p>${photo('pondy_1.jpg','Pondy — our first trip and one of the best ones to always remember. ❤️')}<button class="btn primary" data-next>One more Pondy memory… 🌊</button></div>`);
+add(`<div class="inner">${photo('pondy_2.jpg','Unforgettable memories. ❤️')}<button class="btn primary" data-next>Now… Coorg. 🫶🏻</button></div>`);
+add(`<div class="inner">${photo('coorg_1.jpg','Coorg — just two of us, new place, new people, just vibing through it all and just happy.')}<button class="btn primary" data-next>Just us, somewhere new…</button></div>`);
+add(`<div class="inner">${photo('coorg_2.jpg','Just us, somewhere new. 🫶🏻')}<button class="btn primary" data-next>And then there was Sakleshpur… 😂</button></div>`);
+add(`<div class="inner">${photo('sakleshpur_1.jpg','Sakleshpur — crazy me, bothered you, divine calling as well, chaos with memories. 😂🙏🏻')}<button class="btn primary" data-next>Of course there was more chaos…</button></div>`);
+add(`<div class="inner">${photo('sakleshpur_2.jpg','And somehow, the chaos became a memory worth keeping.')}<button class="btn primary" data-next>Harishchandragad next. ⛰️</button></div>`);
+add(`<div class="inner">${photo('harishchandragad_1.jpg','We really thought we were ready for this. 😂')}<button class="btn primary" data-next>Keep going… ❤️</button></div>`);
+add(`<div class="inner">${photo('harishchandragad_2.jpg','Tired legs, happy hearts. Definitely worth every step. ⛰️❤️')}<button class="btn primary" data-next>And then… Mysore. 🌸</button></div>`);
+add(`<div class="inner">${photo('mysore_1.jpg','Mysore — just you. Just me. No rush. 🌸')}<button class="btn primary" data-next>One more little moment…</button></div>`);
+add(`<div class="inner">${photo('mysore_2.jpg','Somewhere between all these little moments, I felt completely at peace.')}<p class="copy">Harishchandragad gave me adventure.
+
+Mysore gave me calm.
+
+And all these trips gave me something much more important —
+
+more memories with you. ❤️
+
+And honestly, that’s what makes any place special.</p><button class="btn primary" data-next>There’s still distance…</button></div>`);
+add(`<div class="inner">${photo('long_distance_1.jpg','A little distance, a lot of love. ❤️')}<button class="btn primary" data-next>And another one…</button></div>`);
+add(`<div class="inner">${photo('long_distance_2.jpg','Waiting for the next hello, the next meeting, the next memory.')}<p class="copy">Long distance has never been my favourite part of loving you.
+
+There are days when I wish you were right beside me instead of being a call away. Days when I miss the little things — seeing you, talking to you, just being around you.
+
+But somehow, even with the distance, you still manage to feel like such a big part of my everyday life.
+
+Maybe that’s what makes us special. The miles can separate us for a while, but they never really make you feel far from my heart. ❤️</p><button class="btn primary" data-next>Quick test 😂</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:38px">Who is more annoying?</h2><div class="choices"><button class="btn" data-annoy="me">ME 😇</button><button class="btn" data-annoy="you">YOU 😌</button></div><p id="annoyResult" class="copy"></p><button class="btn primary" data-next id="annoyNext" style="display:none">Okay, continue 😂❤️</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:40px">You’re my human. 🥹</h2><p class="copy">You are genuinely one of the best finds in my life.
+
+I don’t think anyone could have handled me, understood me and loved me the way you do.
+
+You make me happy.
+
+You’re my comfort.
+
+You give me a feeling that no one else can.
+
+I’ve had some rough months, but somehow life doesn’t feel as scary when I know you’re beside me.
+
+And maybe that’s what I love most…
+
+I don’t just want you for the good days.
+
+I want you beside me through all of them.
+
+You’re my human.
+
+And I loveeee you so much. ❤️</p>${photo('cute_1.jpg','A little moment I want to keep close. ❤️')}<button class="btn primary" data-next>And another… 🫶🏻</button></div>`);
+add(`<div class="inner">${photo('cute_2.jpg','One of those ordinary days that became special.')}<button class="btn primary" data-next>Keep going…</button></div>`);
+add(`<div class="inner">${photo('cute_3.jpg','More of my favourite kind of memories. 🫶🏻')}<button class="btn primary" data-next>Still more… ❤️</button></div>`);
+add(`<div class="inner">${photo('cute_4.jpg','Different days, same favourite person.')}<button class="btn primary" data-next>One last one here…</button></div>`);
+add(`<div class="inner">${photo('cute_5.jpg','My favourite part was always having you beside me. ❤️')}<p class="copy">Of course, being with you isn’t always peaceful. 😂
+
+There are the teasing sessions.
+
+Me annoying you.
+
+Me teasing your legs and making you chase me.
+
+And somehow, even those stupid little moments become memories I wouldn’t trade for anything.
+
+Because honestly…
+
+just being with you is fun. ❤️</p><div class="card"><p class="copy" style="margin-bottom:8px">Would you survive one full day without me?</p><button class="btn" data-survive="yes">YES</button><button class="btn" data-survive="no">NO</button><p id="surviveResult" class="copy"></p><button class="btn primary" data-next id="surviveNext" style="display:none">Continue ❤️</button></div></div>`);
+add(`<div class="inner">${photo('tirupati_1.jpg','A little prayer for us. 🙏🏻')}<button class="btn primary" data-next>One more prayer…</button></div>`);
+add(`<div class="inner">${photo('tirupati_2.jpg','May God keep blessing our journey. ❤️')}<button class="btn primary" data-next>And one more…</button></div>`);
+add(`<div class="inner">${photo('tirupati_3.jpg','More places, more prayers, more memories.')}<p class="copy">Somewhere between all our journeys, there’s one thing I quietly keep asking God for.
+
+Not a perfect life.
+
+Just a happy one.
+
+A peaceful one.
+
+A life where we keep travelling, laughing, praying, growing and making memories together.
+
+I pray God keeps blessing us, keeps us together and gives us the kind of life where we can look back one day and say…
+
+“We really lived.” 🙏🏻❤️</p><button class="btn primary" data-next>Pick our next adventure ❤️</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:38px">Pick our next adventure ❤️</h2><div class="choices"><button class="btn" data-future="Sunrise">🌅 Sunrise</button><button class="btn" data-future="Mountains">🏔️ Mountains</button><button class="btn" data-future="Beach">🌊 Beach</button><button class="btn" data-future="Lazy day">🏡 Lazy day together</button></div><p id="futureResult" class="copy"></p><button class="btn primary" data-next id="futureNext" style="display:none">Continue ❤️</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:40px">A tiny little game before your cake… 🎈</h2><p class="copy">Pop the balloons one by one.
+There’s a message waiting inside each one.</p><div class="balloons"><button class="balloon" data-balloon="YOU">POP</button><button class="balloon" data-balloon="ARE">POP</button><button class="balloon" data-balloon="MINE">POP</button><button class="balloon" data-balloon="FOREVER">POP</button></div><div class="balloon-word" id="balloonWord"></div><p id="balloonHint" class="small">Start with any balloon. ❤️</p><button class="btn primary" data-next id="balloonNext" style="display:none">Cake time 🎂</button></div>`);
+add(`<div class="inner"><h2 class="title" style="font-size:40px">Okay… birthday cake time. 🎂</h2><p id="wishText" class="copy">Make your wish. ❤️</p><div class="cake-wrap"><div class="cake" id="cake"><div class="candle c1"><div class="flame"> </div><div class="smoke">☁️</div></div><div class="candle c2"><div class="flame"></div><div class="smoke">☁️</div></div><div class="candle c3"><div class="flame"></div><div class="smoke">☁️</div></div><div class="cake-top"></div><div class="plate"></div></div></div><button class="btn primary" id="blowBtn">💨 Blow the candles</button><button class="btn" data-next id="cakeNext" style="display:none">Now come here… ❤️</button></div>`);
+add(`<div class="inner"><div class="card"><div style="font-size:55px">🎙️</div><p class="copy">Okay…
+
+No more questions.
+No more games.
+
+Just listen to me for a minute. ❤️</p><button class="btn primary" id="voiceBtn">Tap to hear me 🎧</button><p class="small" id="voiceNote">Your voice note will be added here. ❤️</p></div><button class="btn" data-next>Okay… now you can continue. 🥺</button></div>`);
+add(`<div class="inner"><h1 class="title" style="font-size:42px">Happiest birthday, my dearest one. ❤️</h1><p class="copy">My Bangara, Bujji, Appu, Khanna, Baby…
+
+I hope this year gives you everything your heart deserves.
+
+Happiness. Success. Peace. Beautiful experiences. Good health. And so much love.
+
+I hope you keep smiling, keep dreaming and keep becoming everything you’re meant to be.
+
+And selfishly… I hope I get to be beside you for as many of those moments as possible.
+
+Thank you for being you.
+
+Thank you for making me happy.
+
+Thank you for being my comfort.
+
+Thank you for making ordinary days feel special just by being there.
+
+Happy birthday, my love.
+
+I loveeee you. ❤️</p><button class="btn primary" data-next>One last thing… ❤️</button></div>`);
+add(`<div class="inner"><p class="copy">If you could choose one person to go through all of life’s adventures with…</p><button class="btn primary" data-next>You already know the answer ❤️</button></div>`);
+add(`<div class="inner"><div class="final-heart">❤️</div><p class="copy">If I could go back and choose again…
+
+I’d still choose you.
+
+Through every journey.
+
+Every milestone.
+
+Every happy day.
+
+Every difficult day.
+
+Every silly moment.
+
+Every quiet moment.
+
+I’d choose you again and again.
+
+Because somewhere along the way, you stopped being just someone I love…
+
+you became my person. ❤️</p><h2 style="font-weight:500">Happy Birthday, Vikki.</h2><p class="small">Your Bhummu ❤️</p><p class="copy" style="margin-top:28px">Now come here… 🥺❤️<br>And give me my birthday hug.</p></div>`);
+const app=document.getElementById('app');let i=0,moving=false;function render(){app.innerHTML='';screens.forEach((s,k)=>{const el=document.createElement('section');el.className='screen'+(k===0?' active':'');el.innerHTML=s.html;app.appendChild(el);if(s.init)s.init()});bind();}
+function bind(){document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>go(1));document.querySelectorAll('[data-reveal]').forEach(b=>b.onclick=()=>{const src=b.dataset.reveal;const cover=b.closest('.photo-reveal').querySelector('.photo-cover');const img=b.closest('.photo-reveal').querySelector('[data-photo]');cover.style.display='none';img.style.display='block';hearts(2)});document.querySelector('[data-love]')?.addEventListener('click',()=>{const c=document.getElementById('loveChoices');c.innerHTML='<div class="choices"><button class="btn primary" id="yes">YES ❤️</button><button class="btn" id="no">NO 😤</button></div><p id="loveMsg" class="small"></p>';document.getElementById('yes').onclick=()=>{hearts(6);document.getElementById('loveMsg').textContent='I KNEW IT. Good answer, boyfriend. 😌❤️';setTimeout(()=>go(1),850)};document.getElementById('no').onclick=()=>{c.innerHTML='<div class="panda">🐼😤</div><p class="small">Excuse me??? Wrong answer. Think again, mister.</p><button class="btn primary" id="yes2">YES ❤️</button>';document.getElementById('yes2').onclick=()=>{hearts(6);go(1)}}});document.querySelectorAll('[data-annoy]').forEach(b=>b.onclick=()=>{document.getElementById('annoyResult').textContent=b.dataset.annoy==='me'?'Correct. I’m adorable. 😇❤️':'Bold of you to say that when you’re clearly the annoying one. 😌😂❤️';document.getElementById('annoyNext').style.display='inline-block'});document.querySelectorAll('[data-survive]').forEach(b=>b.onclick=()=>{document.getElementById('surviveResult').textContent=b.dataset.survive==='yes'?'Liar. 😂❤️':'Correct answer. 😌❤️';document.getElementById('surviveNext').style.display='inline-block'});document.querySelectorAll('[data-future]').forEach(b=>b.onclick=()=>{document.getElementById('futureResult').textContent=`Deal. Adding ${b.dataset.future.toLowerCase()} to our future memories. ❤️`;document.getElementById('futureNext').style.display='inline-block'});document.querySelectorAll('[data-balloon]').forEach(b=>b.onclick=()=>{if(b.classList.contains('popped'))return;b.classList.add('popped');const word=b.dataset.balloon;document.getElementById('balloonWord').textContent=word;hearts(3);const left=document.querySelectorAll('[data-balloon]:not(.popped)').length;document.getElementById('balloonHint').textContent=left?`${left} balloon${left===1?'':'s'} left… ❤️`:'YOU ARE MINE FOREVER. ❤️';if(!left){document.getElementById('balloonNext').style.display='inline-block';confetti()}});document.getElementById('blowBtn')?.addEventListener('click',()=>{const t=document.getElementById('wishText'),cake=document.getElementById('cake'),btn=document.getElementById('blowBtn'),n=document.getElementById('cakeNext');btn.disabled=true;t.textContent='Make your wish…';setTimeout(()=>t.textContent='Fast… 😌',650);setTimeout(()=>t.textContent='Faster… 😂',1250);setTimeout(()=>{t.textContent='DONE! 💨❤️';cake.classList.add('blown');hearts(8);confetti();n.style.display='inline-block'},1900)});document.getElementById('voiceBtn')?.addEventListener('click',async()=>{const audio=document.getElementById('voiceAudio');const note=document.getElementById('voiceNote');const btn=document.getElementById('voiceBtn');try{musicFrame.contentWindow.postMessage(JSON.stringify({event:'command',func:'pauseVideo',args:[]}), 'https://www.youtube.com');audio.currentTime=0;await audio.play();btn.textContent='Playing my voice note… ❤️';note.textContent='Just listen to me for a minute. ❤️';audio.onended=()=>{btn.textContent='Listen again 🎧';note.textContent='Okay… now you know what I wanted to tell you. ❤️';try{musicFrame.contentWindow.postMessage(JSON.stringify({event:'command',func:'playVideo',args:[]}), 'https://www.youtube.com')}catch(e){}}}catch(e){note.textContent='Tap once more to play my voice note. ❤️'}});}
+function go(d){if(moving)return;moving=true;setTimeout(()=>moving=false,650);i=Math.min(screens.length-1,i+d);document.querySelectorAll('.screen').forEach((s,k)=>s.classList.toggle('active',k===i));window.scrollTo({top:0,behavior:'instant'});}
+function hearts(n=4){for(let x=0;x<n;x++){const h=document.createElement('div');h.className='heart';h.textContent=['❤️','🤍','✨','💗'][Math.floor(Math.random()*4)];h.style.left=(35+Math.random()*30)+'vw';h.style.top=(60+Math.random()*15)+'vh';h.style.setProperty('--x',(Math.random()*100-50)+'px');document.body.appendChild(h);setTimeout(()=>h.remove(),2200)}}
+function confetti(){const bits=['✨','💛','🤍','💗'];for(let n=0;n<65;n++){const c=document.createElement('i');c.className='confetti';c.textContent=bits[n%bits.length];c.style.left=Math.random()*100+'vw';c.style.setProperty('--drift',(Math.random()*220-110)+'px');c.style.animationDelay=(Math.random()*.9)+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),4300)}}
+const musicFrame=document.getElementById('musicFrame');
+let musicStarted=false;
+function startMusic(){
+  if(musicStarted)return;
+  musicStarted=true;
+  try{
+    musicFrame.contentWindow.postMessage(JSON.stringify({event:'command',func:'playVideo',args:[]}), 'https://www.youtube.com');
+  }catch(e){}
+}
+// Autoplay is requested immediately. iPhone/Safari may block audible autoplay;
+// the first tap anywhere on the page then starts the song automatically, with no music button.
+window.addEventListener('load',()=>setTimeout(startMusic,300));
+['pointerdown','touchstart','click'].forEach(ev=>document.addEventListener(ev,startMusic,{once:true,passive:true}));
+render();
+</script></body></html>
